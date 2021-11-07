@@ -137,7 +137,10 @@ DROP TABLE test_table
 
 -- COMMAND ----------
 
-SELECT "${c.username}", "${c.userhome}", "${c.database}", "${c.source}"
+SELECT "${c.username}" as username, 
+       "${c.userhome}" as userhome, 
+       "${c.database_name}" as database_name, 
+       "${c.source}" as source
 
 -- COMMAND ----------
 
@@ -152,7 +155,7 @@ SELECT "${c.username}", "${c.userhome}", "${c.database}", "${c.source}"
 
 -- COMMAND ----------
 
-DESCRIBE DATABASE EXTENDED ${c.database}
+DESCRIBE DATABASE EXTENDED ${c.database_name}
 
 -- COMMAND ----------
 

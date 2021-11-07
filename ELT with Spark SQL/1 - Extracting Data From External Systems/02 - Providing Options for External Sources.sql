@@ -245,10 +245,11 @@ DESCRIBE EXTENDED jdbc_users
 -- COMMAND ----------
 
 -- MAGIC %python
--- MAGIC jdbc_users_path = f"{Paths.userhome}/db/jdbc_users"
+-- MAGIC jdbc_users_path = f"{Paths.database_location}/jdbc_users"
 -- MAGIC print(jdbc_users_path)
 -- MAGIC 
--- MAGIC dbutils.fs.ls(jdbc_users_path)
+-- MAGIC files = dbutils.fs.ls(jdbc_users_path)
+-- MAGIC print(f"Found {len(files)} files")
 
 -- COMMAND ----------
 
