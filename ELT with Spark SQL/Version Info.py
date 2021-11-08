@@ -11,7 +11,7 @@
 # MAGIC 
 # MAGIC * Name: **ELT with Spark SQL**
 # MAGIC * Version:  **1.0.0**
-# MAGIC * Built On: **Nov 7, 2021 at 19:18:10 UTC**
+# MAGIC * Built On: **Nov 8, 2021 at 15:19:15 UTC**
 
 # COMMAND ----------
 

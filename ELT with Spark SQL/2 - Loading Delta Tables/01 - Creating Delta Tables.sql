@@ -234,16 +234,15 @@ SELECT * FROM sales_external_copy
 
 -- COMMAND ----------
 
--- TODO
-CREATE TABLE IF NOT EXISTS sales_external_diff (
-  order_id STRING,
-  transactions_timestamp BIGINT,
-  purchase_revenue_in_usd STRING,
-  date date
-)
-LOCATION "${c.userhome}/tmp/sales_external";
+-- CREATE TABLE IF NOT EXISTS sales_external_diff (
+--   order_id STRING,
+--   transactions_timestamp BIGINT,
+--   purchase_revenue_in_usd STRING,
+--   date date
+-- )
+-- LOCATION "${c.userhome}/tmp/sales_external";
 
-SELECT * FROM sales_external_diff
+-- SELECT * FROM sales_external_diff
 
 -- COMMAND ----------
 
